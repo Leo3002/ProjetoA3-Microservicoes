@@ -1,5 +1,5 @@
 ![Foto pro readme](https://github.com/Leo3002/ProjetoA3-Microservicoes/assets/88354824/eaffb7e4-5825-403c-bead-d3d4a9a8a6c2)
-# Projeto A3 - Microsserviço Back end e Framework Fron End
+# Projeto A3 - Node e Vue
 Projeto A3 - Front End utilizando o Vue, back end utilizando Node
 [Título e Imagem de capa](#Título-e-Imagem-de-capa)
 * [Badges](#badges)
