@@ -7,9 +7,9 @@ Projeto A3 - Front End utilizando o Vue, back end utilizando Node
 
 ```algum comando```
 
-```javascript
+```~javascript
   let x = 10
-  ix( x > 10) {
+  if( x > 10) {
     console.log("oi")
   }
 ```
