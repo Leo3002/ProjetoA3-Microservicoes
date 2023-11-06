@@ -7,6 +7,13 @@ Projeto A3 - Front End utilizando o Vue, back end utilizando Node
 
 ```algum comando```
 
+```javascript
+  let x = 10
+  ix( x > 10) {
+    console.log("oi")
+  }
+```
+
 # Descrição do Projeto
 <h4>Iremos realizar a criação de um planner semanal utilizando a linguagem Java Script e demais implementações necssárias para compor o projeto. </h4>
 
