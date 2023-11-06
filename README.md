@@ -2,7 +2,7 @@
 # Projeto A3 - Node e Vue
 Projeto A3 - Front End utilizando o Vue, back end utilizando Node
 
-# Súmario
+# Como subir o Projeto
 <h4></h4>
 
 # Descrição do Projeto
