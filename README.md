@@ -5,6 +5,8 @@ Projeto A3 - Front End utilizando o Vue, back end utilizando Node
 # Como subir o Projeto
 <h4></h4>
 
+```algum comando```
+
 # Descrição do Projeto
 <h4>Iremos realizar a criação de um planner semanal utilizando a linguagem Java Script e demais implementações necssárias para compor o projeto. </h4>
 
