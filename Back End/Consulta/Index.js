@@ -23,6 +23,7 @@ const funcoes = {
             observacao.id);
         observacoes[indice] = observacao;
     },
+    
 };
 
 
