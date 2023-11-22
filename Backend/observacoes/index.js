@@ -1,6 +1,8 @@
 const express = require('express');
 const { v4: uuidv4 } = require('uuid');
 const axios = require('axios');
+const mysql = require('mysql2')
+require ('dotenv').config()
 const app = express();
 app.use(express.json());
 
