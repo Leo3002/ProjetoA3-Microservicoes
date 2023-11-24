@@ -5,49 +5,58 @@ const mysql = require('mysql2')
 require('dotenv').config()
 app.use(express.json());
 const lembretes = {};
-//const { DB_USER, DB_PASSWORD, DB_HOST, DB_DATABASE } = Banco_lembrete.env
 contador = 0;
 
-/*app.get('/lembretes', (req, res) => {
-    res.send(lembretes);
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    database: 'lembretes',
+    password: 'usjt'
 });
 
-app.post('/lembretes', async (req, res) => {
-    contador++;
-    const { texto } = req.body;
-    lembretes[contador] = {
-        contador, texto
-    }
-    await axios.post("http://localhost:10000/eventos", {
-        tipo: "LembreteCriado",
-        dados: {
-            contador,
-            texto,
-        },
-    });
-    res.status(201).send(lembretes[contador]);
-});*/
-
-
-app.post('/lembretes'), (req, res) => {
-    const connection = mysql.createConnection({
-        host: 'localhost',
-        user: 'root',
-        database: 'lembretes',
-        password: 'usjt'
-
-    })
+app.get('/lembretes', (req, res) => {    
+    const sql = "Select * from Lembretes"
+    connection.query(sql,
+        (err, fields) => {
+            console.log(err)
+            res.send(fields)
+        })
+});
+app.post('/lembretes', (req, res) => {
     const Nome_Lembretes = req.body.Nome_Lembretes
     const Data_Lembretes = req.body.Data_Lembretes
     const Id_Prioridade = req.body.Id_Prioridade
     const sql = "INSERT INTO Lembretes (Nome_Lembretes, Data_Lembretes, Id_Prioridade, Concluido) VALUES (?, ?, ?, 0)"
     connection.query(sql, [Nome_Lembretes, Data_Lembretes, Id_Prioridade],
-        (err, results, fields) => {
+        (err, results) => {
             console.log(results)
-            console.log(fields)
+            console.log(err)
             res.send('ok')
         })
-}
+});
+app.put('/lembretes', (req, res) => {
+    
+    const id_Lembretes = req.body.id_Lembretes
+    const concluido = req.body.Concluido
+    if (concluido === 0) {
+        const sql = "update Lembretes set Concluido  = 1 where id_Lembretes = ?;"
+        connection.query(sql, [id_Lembretes],
+            (err, results) => {
+                console.log(results)
+                console.log(err)
+                res.send('ok')
+            })
+    } if (concluido === 1) {
+        const sql = "update Lembretes set Concluido  = 0  where id_Lembretes = ?;"
+        connection.query(sql, [id_Lembretes],
+            (err, results) => {
+                console.log(results)
+                console.log(err)
+                res.send('ok')
+            })
+    }
+});
+
 app.post("/eventos", (req, res) => {
     console.log(req.body);
     res.status(200).send({ msg: "ok" });

@@ -2,37 +2,54 @@ const express = require('express');
 const { v4: uuidv4 } = require('uuid');
 const axios = require('axios');
 const mysql = require('mysql2')
-require ('dotenv').config()
+require('dotenv').config()
 const app = express();
 app.use(express.json());
 
 const observacoesPorLembreteId = {};
 
-//:id é um placeholder
-//exemplo: /lembretes/123456/observacoes
-app.post('/lembretes/:id/observacoes', async (req, res) => {
-    const idObs = uuidv4();
-    const { texto } = req.body;
-    //req.params dá acesso à lista de parâmetros da URL
-    const observacoesDoLembrete =
-        observacoesPorLembreteId[req.params.id] || [];
-    observacoesDoLembrete.push({ id: idObs, texto,});
-    observacoesPorLembreteId[req.params.id] =
-        observacoesDoLembrete;
-    await axios.post('http://localhost:10000/eventos', {
-        tipo: "ObservacaoCriada",
-        dados: {
-            id: idObs,
-            texto,
-            lembreteId: req.params.id,
-            
-        }
-    });
-    res.status(201).send(observacoesDoLembrete);
-});
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    database: 'Observacoes',
+    password: 'usjt'
 
-app.get('/lembretes/:id/observacoes', (req, res) => {
-    res.send(observacoesPorLembreteId[req.params.id] || []);
+});
+//Funçâo de Select
+app.get('/observacoes', (req, res) => {
+    const sql = "Select * from observacoes"
+    connection.query(sql,
+        (err, fields) => {
+            console.log(err)
+            res.send(fields)
+        })
+});
+//Funçâo de Insert
+app.post('/observacoes', (req, res) => {
+
+    const id_Lembretes = req.body.id_Lembretes
+    const texto = req.body.texto
+    const sql = "INSERT INTO observacoes (id_Lembretes, texto) VALUES (?, ?)"
+    connection.query(sql, [id_Lembretes, texto],
+        (err, results) => {
+            console.log(results)
+            console.log(err)
+            res.send('ok')
+        })
+});
+// Função de Update
+app.put('/observacoes', (req, res) => {
+
+    const id_Observacoes = req.body.Id_Observacoes
+    const texto = req.body.texto
+    const sql = "update observacoes set texto = ? where Id_Observacoes = ?;"
+    connection.query(sql, [texto, id_Observacoes],
+        (err, results) => {
+            console.log(results)
+            console.log(err)
+            res.send('ok')
+        })
+
 });
 
 app.post("/eventos", (req, res) => {

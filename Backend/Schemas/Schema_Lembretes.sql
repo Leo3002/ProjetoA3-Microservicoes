@@ -22,3 +22,4 @@ insert into Prioridade(Prioridade) values ("Significativa");
 insert into Prioridade(Prioridade) values ("Moderada");
 insert into Prioridade(Prioridade) values ("Pouca");
 insert into Prioridade(Prioridade) values ("Baixa");
+select * from lembretes;
