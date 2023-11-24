@@ -23,3 +23,6 @@ insert into Prioridade(Prioridade) values ("Moderada");
 insert into Prioridade(Prioridade) values ("Pouca");
 insert into Prioridade(Prioridade) values ("Baixa");
 select * from lembretes;
+select * from Prioridade;
+
+DELETE FROM Prioridade WHERE Id_Prioridade = 5;
