@@ -1,7 +1,6 @@
 ![foto readme](https://github.com/Leo3002/ProjetoA3-Microservicoes/assets/88354824/67947c21-240d-43bb-9e73-db70b7c61f94)
 # Projeto A3 
-Node e Vue
-Projeto A3 - Front End utilizando o Vue, back end utilizando Node
+Projeto A3 - Focado em Micro Serviços.
 
 # Como subir o Projeto
 <h4>Para o projeto funcionar siga as intruções a seguir:</h4>
@@ -10,7 +9,7 @@ Projeto A3 - Front End utilizando o Vue, back end utilizando Node
 
 ```CTRL + Enter```
 
-<h5> em cada ";" para executar a criação do banco, utiliza-lo, criando as tabelas e inserindo conteúdos na tabela</h5>
+<h5> em cada ";" para executar a criação do banco, utiliza-lo, criando as tabelas e inserindo conteúdos na tabela.</h5>
 <br>
 
 # <h4>Depois de ter feito a parte do banco de dados vamos para a parte de backend.</h4>
@@ -74,11 +73,11 @@ Projeto A3 - Front End utilizando o Vue, back end utilizando Node
 <h4></h4>
 
 # Linguagens e Plataformas utilizadas
-<h4>Node, Vue, HTML, Css e JavaScript e  Visual Studio Code</h4>
+<h4>Node, HTML, Css e JavaScript e Visual Studio Code</h4>
 
 # Pessoas Desenvolvedoras do Projeto
-<h4></h4>
-  Lucas Leonette da Cruz, João Victor dos Reis Gomes, Raphaela David Appolinario
+<h4> Lucas Leonette da Cruz, João Victor dos Reis Gomes, Raphaela David Appolinario</h4>
+ 
 
 # Conclusão
 <h4>Concluímos com esse projeto que utilizando as linguagens e demais orientações do professor fizemos um excelente e proveitoso trabalho que irá ser utilizado além da faculdade para nos ajudar a organizar nosso dia a dia.</h4>
