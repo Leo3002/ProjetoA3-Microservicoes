@@ -28,6 +28,10 @@ Projeto A3 - Front End utilizando o Vue, back end utilizando Node
 <h5>Agora utilize o comando para instalar as dependências dessa pasta:</h5>
 
 ```npm install nodemon express cors axios```
+<h5>Agora abra o arquivo "packege.json", e coloque o seguinte texto dentro de "scripts":</h5>
+
+```"start": "nodemon index.js"```
+<h5>Não esqueça de colocar "," no final da linha do "text" dentro de "scripts"</h5>
 <h5>Agora precisamos sair da pasta e entrar na pasta "lembretes" siga os comando a seguir:</h5>
 
 ```cd .. ```
@@ -39,7 +43,10 @@ Projeto A3 - Front End utilizando o Vue, back end utilizando Node
 <h5>Agora instale essas dependências:</h5>
 
 ```npm install nodemon express cors axios mysql2```
+<h5>Agora abra o arquivo "packege.json", e coloque o seguinte texto dentro de "scripts":</h5>
 
+```"start": "nodemon index.js"```
+<h5>Não esqueça de colocar "," no final da linha do "text" dentro de "scripts"</h5>
 <h5>Agora teremos que entrar na pasta de observações, siga as intruções a seguir:</h5>
 
 ```cd .. ```
@@ -50,6 +57,10 @@ Projeto A3 - Front End utilizando o Vue, back end utilizando Node
 <h5>Agora intale as dependências:</h5>
 
 ```npm install nodemon express cors axios mysql2```
+<h5>Agora abra o arquivo "packege.json", e coloque o seguinte texto dentro de "scripts":</h5>
+
+```"start": "nodemon index.js"```
+<h5>Não esqueça de colocar "," no final da linha do "text" dentro de "scripts"</h5>
 <br>
 <br>
 # <h4>Agora entramos na parte de frontend.</h4>
