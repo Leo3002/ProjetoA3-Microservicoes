@@ -56,7 +56,7 @@ Projeto A3 - Front End utilizando o Vue, back end utilizando Node
 
 
 # Descrição do Projeto
-<h4>Iremos realizar a criação de um planner semanal utilizando a linguagem Java Script e demais implementações necssárias para compor o projeto. </h4>
+<h4>Iremos realizar a criação de um planner semanal utilizando a linguagem Java Script e demais implementações necessárias para compor o projeto. </h4>
 
 # Funcionalidades e Demonstração da Aplicação
 <h4></h4>
@@ -69,5 +69,5 @@ Projeto A3 - Front End utilizando o Vue, back end utilizando Node
   Lucas Leonette da Cruz, João Victor dos Reis Gomes, Raphaela David Appolinario
 
 # Conclusão
-<h4></h4>
+<h4>Concluímos com esse projeto que utilizando as linguagens e demais orientações do professor fizemos um excelente e proveitoso trabalho que irá ser utilizado além da faculdade para nos ajudar a organizar nosso dia a dia.</h4>
 
