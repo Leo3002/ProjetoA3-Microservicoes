@@ -63,6 +63,7 @@ Projeto A3 - Front End utilizando o Vue, back end utilizando Node
 <h5>Não esqueça de colocar "," no final da linha do "text" dentro de "scripts"</h5>
 <br>
 <br>
+
 # <h4>Agora entramos na parte de frontend.</h4>
 
 
