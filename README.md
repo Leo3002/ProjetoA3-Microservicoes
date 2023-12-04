@@ -12,7 +12,8 @@ Projeto A3 - Front End utilizando o Vue, back end utilizando Node
 
 <h5> em cada ";" para executar a criação do banco, utiliza-lo, criando as tabelas e inserindo conteúdos na tabela</h5>
 <br>
-<h4>Depois de ter feito a parte do banco de dados vamos para a parte de backend.</h4>
+
+# <h4>Depois de ter feito a parte do banco de dados vamos para a parte de backend.</h4>
 <h5>Primeiro vai precisar do visual studio code intalado na sua máquina, depois abra um novo terminal utilizando o comando: </h5>
 
 ```CTRL + SHIFT + '```
@@ -50,7 +51,8 @@ Projeto A3 - Front End utilizando o Vue, back end utilizando Node
 
 ```npm install nodemon express cors axios mysql2```
 <br>
-<h4>Agora entramos na parte de frontend.</h4>
+<br>
+# <h4>Agora entramos na parte de frontend.</h4>
 
 
 # Descrição do Projeto
