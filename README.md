@@ -17,7 +17,7 @@ Projeto A3 - Focado em Micro Serviços.
 
 ```CTRL + SHIFT + '```
 
-<h5>Agora você vai ter q entrar em cada pasta e instalar as dependências.</h5>
+<h5>Agora você vai ter q entrar em cada pasta e instalar as dependências, por isso precisa ter o node.js instalado na sua m[aquina.</h5>
 <h5>Primeiro entre na pasta chamada "barramento-de-eventos", não esqueça no terminal o nome da pasta tem que ser igual a como a pasta está escrita, utilizando o comando a seguir no terminal:</h5>
 
 ```cd barramento-de-eventos```
@@ -64,6 +64,7 @@ Projeto A3 - Focado em Micro Serviços.
 <br>
 
 # <h4>Agora entramos na parte de frontend.</h4>
+<h3>Não conseguimos utilizar o axios para fazer a comunicação entre front e back, para testar o back por favor utilize a extensão thunderclint</h3>
 
 
 # Descrição do Projeto
